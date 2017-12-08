@@ -1,0 +1,88 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL    60
+@       IN      SOA     ns.onsepc.me.    root.onspec.me. (
+                              2         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         800 )  ; Negative Cache TTL
+;
+@       IN      NS      ns.onsepc.me.
+@       IN      NS      ns2.onsepc.me.
+ns      IN      A       127.0.0.1
+ns2     IN      A       127.0.0.1
+www     IN      A       52.79.69.231
+$ORIGIN 6.9.9.6.2.0.0.0.8.8.gtin.gs1.id.onsepc.me.
+$ORIGIN 6.9.9.6.2.0.0.0.8.8.gln.gs1.id.onsepc.me.
+$ORIGIN 6.9.9.6.2.0.0.0.8.8.sscc.gs1.id.onsepc.me.
+$ORIGIN 6.9.9.6.2.0.0.0.8.8.grai.gs1.id.onsepc.me.
+$ORIGIN 6.9.9.6.2.0.0.0.8.8.giai.gs1.id.onsepc.me.
+1.0.0 IN NAPTR 0 0 "u" "urn:epc:id:giai:88000269.96001" "" . ;mxkazm8eJ0
+2.0.0 IN NAPTR 0 0 "u" "urn:epc:id:giai:88000269.96002" "" . ;X46dBgJe79
+3.0.0 IN NAPTR 0 0 "u" "urn:epc:id:giai:88000269.96003" "" . ;K4oeElkd0B
+4.0.0 IN NAPTR 0 0 "u" "urn:epc:id:giai:88000269.96004" "" . ;1YQdJZodOG
+5.0.0 IN NAPTR 0 0 "u" "urn:epc:id:giai:88000269.96005" "" . ;q9wdLg4bjP
+6.0.0 IN NAPTR 0 0 "u" "urn:epc:id:giai:88000269.96006" "" . ;QJ0dNxzaLO
+7.0.0 IN NAPTR 0 0 "u" "urn:epc:id:giai:88000269.96007" "" . ;mWZdP1neKg
+8.0.0 IN NAPTR 0 0 "u" "urn:epc:id:giai:88000269.96008" "" . ;JAPdRgReGy
+9.0.0 IN NAPTR 0 0 "u" "urn:epc:id:giai:88000269.96009" "" . ;rlNbWngayg
+0.1.0 IN NAPTR 0 0 "u" "urn:epc:id:giai:88000269.96010" "" . ;W4QbYvpdzq
+1.1.0 IN NAPTR 0 0 "u" "urn:epc:id:giai:88000269.96011" "" . ;EKQe1rjaJY
+2.1.0 IN NAPTR 0 0 "u" "urn:epc:id:giai:88000269.96012" "" . ;GELe32Qd69
+3.1.0 IN NAPTR 0 0 "u" "urn:epc:id:giai:88000269.96013" "" . ;qM7e59Re2v
+4.1.0 IN NAPTR 0 0 "u" "urn:epc:id:giai:88000269.96014" "" . ;O5xe7LAa7r
+5.1.0 IN NAPTR 0 0 "u" "urn:epc:id:giai:88000269.96015" "" . ;VWPe9Q3eLy
+6.1.0 IN NAPTR 0 0 "u" "urn:epc:id:giai:88000269.96016" "" . ;WjnegL6awZ
+7.1.0 IN NAPTR 0 0 "u" "urn:epc:id:giai:88000269.96017" "" . ;WpmbkZXazJ
+8.1.0 IN NAPTR 0 0 "u" "urn:epc:id:giai:88000269.96018" "" . ;wMvbmQ0bYA
+9.1.0 IN NAPTR 0 0 "u" "urn:epc:id:giai:88000269.96019" "" . ;WJxboQKegw
+0.2.0 IN NAPTR 0 0 "u" "urn:epc:id:giai:88000269.96020" "" . ;l4zbqYrbpr
+$ORIGIN 6.9.9.6.2.0.0.0.8.8.gsrn.gs1.id.onsepc.me.
+$ORIGIN 6.9.9.6.2.0.0.0.8.8.gdti.gs1.id.onsepc.me.
+$ORIGIN 6.9.9.6.2.0.0.0.8.8.ginc.gs1.id.onsepc.me.
+$ORIGIN 6.9.9.6.2.0.0.0.8.8.gsin.gs1.id.onsepc.me.
+$ORIGIN 6.9.9.6.2.0.0.0.8.8.gcn.gs1.id.onsepc.me.
+$ORIGIN 6.9.9.6.2.0.0.0.8.8.cpid.gs1.id.onsepc.me.
+$ORIGIN 7.9.9.6.2.0.0.0.8.8.gtin.gs1.id.onsepc.me.
+1.0.0 IN NAPTR 0 0 "u" "143.248.97.71/pms/pedigreeSearch" "" . ;Wpmbk5XezJ
+1.1.1 IN NAPTR 0 0 "u" "http://143.248.97.71:8081/pms/pedigreeSearch" "" . ;wMvbmw0eYA
+1.0 IN NAPTR 0 0 "u" "http://143.248.97.71:8081/pms/pedigreeSearch" "" . ;WJxboYKegw
+2.0.0 IN NAPTR 0 0 "u" "pedigree" "!^.*$!http://143.248.97.71:8081/pms!" . ;JX7axGreyv
+$ORIGIN 7.9.9.6.2.0.0.0.8.8.gln.gs1.id.onsepc.me.
+$ORIGIN 7.9.9.6.2.0.0.0.8.8.sscc.gs1.id.onsepc.me.
+$ORIGIN 7.9.9.6.2.0.0.0.8.8.grai.gs1.id.onsepc.me.
+$ORIGIN 7.9.9.6.2.0.0.0.8.8.giai.gs1.id.onsepc.me.
+$ORIGIN 7.9.9.6.2.0.0.0.8.8.gsrn.gs1.id.onsepc.me.
+$ORIGIN 7.9.9.6.2.0.0.0.8.8.gdti.gs1.id.onsepc.me.
+$ORIGIN 7.9.9.6.2.0.0.0.8.8.ginc.gs1.id.onsepc.me.
+$ORIGIN 7.9.9.6.2.0.0.0.8.8.gsin.gs1.id.onsepc.me.
+$ORIGIN 7.9.9.6.2.0.0.0.8.8.gcn.gs1.id.onsepc.me.
+$ORIGIN 7.9.9.6.2.0.0.0.8.8.cpid.gs1.id.onsepc.me.
+$ORIGIN 8.9.9.6.2.0.0.0.8.8.gtin.gs1.id.onsepc.me.
+$ORIGIN 8.9.9.6.2.0.0.0.8.8.gln.gs1.id.onsepc.me.
+$ORIGIN 8.9.9.6.2.0.0.0.8.8.sscc.gs1.id.onsepc.me.
+$ORIGIN 8.9.9.6.2.0.0.0.8.8.grai.gs1.id.onsepc.me.
+$ORIGIN 8.9.9.6.2.0.0.0.8.8.giai.gs1.id.onsepc.me.
+$ORIGIN 8.9.9.6.2.0.0.0.8.8.gsrn.gs1.id.onsepc.me.
+$ORIGIN 8.9.9.6.2.0.0.0.8.8.gdti.gs1.id.onsepc.me.
+$ORIGIN 8.9.9.6.2.0.0.0.8.8.ginc.gs1.id.onsepc.me.
+$ORIGIN 8.9.9.6.2.0.0.0.8.8.gsin.gs1.id.onsepc.me.
+$ORIGIN 8.9.9.6.2.0.0.0.8.8.gcn.gs1.id.onsepc.me.
+$ORIGIN 8.9.9.6.2.0.0.0.8.8.cpid.gs1.id.onsepc.me.
+$ORIGIN 9.9.9.6.2.0.0.0.8.8.gtin.gs1.id.onsepc.me.
+1 IN NAPTR 0 0 "u" "123114" "" . ;WJxboYjegw
+2 IN NAPTR 0 0 "u" "hahaha" "" . ;l4zbqj2dpr
+0.1 IN NAPTR 0 0 "u" "naver.com" "" . ;gl9avgmbG1
+1.2.0.3 IN NAPTR 0 0 "t" "jfjfja" "" . ;Wjneg56bwZ
+$ORIGIN 9.9.9.6.2.0.0.0.8.8.gln.gs1.id.onsepc.me.
+$ORIGIN 9.9.9.6.2.0.0.0.8.8.sscc.gs1.id.onsepc.me.
+$ORIGIN 9.9.9.6.2.0.0.0.8.8.grai.gs1.id.onsepc.me.
+$ORIGIN 9.9.9.6.2.0.0.0.8.8.giai.gs1.id.onsepc.me.
+$ORIGIN 9.9.9.6.2.0.0.0.8.8.gsrn.gs1.id.onsepc.me.
+$ORIGIN 9.9.9.6.2.0.0.0.8.8.gdti.gs1.id.onsepc.me.
+$ORIGIN 9.9.9.6.2.0.0.0.8.8.ginc.gs1.id.onsepc.me.
+$ORIGIN 9.9.9.6.2.0.0.0.8.8.gsin.gs1.id.onsepc.me.
+$ORIGIN 9.9.9.6.2.0.0.0.8.8.gcn.gs1.id.onsepc.me.
+$ORIGIN 9.9.9.6.2.0.0.0.8.8.cpid.gs1.id.onsepc.me.

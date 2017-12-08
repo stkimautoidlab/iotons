@@ -1,0 +1,28 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL	800
+@	IN	SOA	ns.onsepc.me.	 root.onspec.me. (
+			      2		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 800 )	; Negative Cache TTL
+;
+@	IN	NS	ns.onsepc.me.
+@	IN	NS	ns2.onsepc.me.
+ns	IN	A	127.0.0.1
+ns2	IN	A	127.0.0.1
+www	IN	A	127.0.0.2
+;
+0.1.6.5.4.3.2.1.0.8.8.gtin.gs1.id IN NAPTR 0 0 "t" "fix" "!^.*$!003,7!" .
+0.1.6.5.4.3.2.1.0.8.8.gtin.gs1.id IN NAPTR 0 0 "U" "epcis" "!^.*$!http://autoid3.kaist.ac.kr/epcis-repository-0.4.2/query!" .
+0.1.6.5.4.3.2.1.0.8.8.gtin.gs1.id IN NAPTR 0 0 "U" "ManufacturerService.xml" "!^.*$!!" .
+;
+*.giai.gs1.id IN NAPTR 0 0 "t" "1234" "!^.*$!003,7.!" .
+1.giai.gs1.id IN NAPTR 0 0 "t" "12354" "!^.*$!003,7,!" .
+;
+;
+2.0.8.8.gtin.gs1.id.onsepc.me.             IN      NS     ns.2.0.8.8.gtin.gs1.id.onsepc.me.
+ns            IN      A      52.79.54.62 
+

@@ -1,0 +1,16 @@
+$TTL 86400 ; 1 day
+@ IN SOA ns.1.0.0.0.0.0.0.0.0.0.0.gtin.gs1.id.onsepc.kaist. root.expanne.kaist. (
+                                    2 ; serial
+                                    21600 ; refresh (6 hours)
+                                     1800 ; retry (30 minutes)
+                                  1209600 ; expire (2 weeks)
+                                    86400 ; minimum (1 day)
+)
+
+@ IN NS ns.1.0.0.0.0.0.0.0.0.0.0.gtin.gs1.id.onsepc.kaist.
+ns IN A 127.0.0.1
+www IN A 127.0.0.2
+0.1 IN NAPTR 0 0 "t" "http://www.gs1.org/ons/prefix" "!^.*$!003,7!" .
+0.1 IN NAPTR 0 0 "U" "http://www.gs1.org/ons/epcis" "!^.*$!http://autoid3.kaist.ac.kr/epcis-repository-0.4.2/query!" .
+0.1 IN NAPTR 0 0 "U" "http://143.248.53.35:8081/ONSExtendedService/ONSServiceList/ManufacturerService/ManufacturerService.xml" "!^.*$!!" .
+
